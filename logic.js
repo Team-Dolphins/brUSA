@@ -25,6 +25,11 @@ var config = {
 firebase.initializeApp(config);
 var database = firebase.database();
 
+$('#searchBar').keypress(function(event){
+        if(event.which == 13){
+        $('#addLocation').click();
+        }
+    });
 
 $('#addLocation').on('click', function(event) {
     event.preventDefault();
@@ -32,12 +37,6 @@ $('#addLocation').on('click', function(event) {
    scrollTop: $("#map").offset().top
 }, 1000);
 
-$('#searchBar').keypress(function(event){
-        if(event.which == 13){
-        event.preventDefault();
-        $('#addLocation').click();
-        }
-    });
 
     cityStateLocation = $("#searchBar").val();
     database.ref().push({
