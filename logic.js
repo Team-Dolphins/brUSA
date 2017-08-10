@@ -27,6 +27,7 @@ var database = firebase.database();
 
 $('#searchBar').keypress(function(event){
         if(event.which == 13){
+        event.preventDefault();
         $('#addLocation').click();
         }
     });
