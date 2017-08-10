@@ -25,13 +25,23 @@ var config = {
 firebase.initializeApp(config);
 var database = firebase.database();
 
+$('#searchBar').keypress(function(event){
+        if(event.which == 13){
+        event.preventDefault();
+        $('#addLocation').click();
+        }
+    });
 
 
-$('body').on('click', '#addLocation', function(event) {
+
+$('#addLocation').on('click', function(event) {
     event.preventDefault();
     $('html, body').animate({
    scrollTop: $("#map").offset().top
 }, 1000);
+
+
+    
 
     cityStateLocation = $("#searchBar").val();
     database.ref().push({
