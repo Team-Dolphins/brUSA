@@ -41,7 +41,7 @@ $('#addLocation').on('click', function(event) {
 }, 1000);
 
 
-
+    
 
     cityStateLocation = $("#searchBar").val();
     database.ref().push({
@@ -84,10 +84,6 @@ $('#addLocation').on('click', function(event) {
                     brewweb = brewery.data[i].brewery.website
                     brewaddy = brewery.data[i].streetAddress
 
-                    console.log(brewname);
-                    console.log(brewweb);
-                    console.log(brewaddy);
-
                     marker[i] = new google.maps.Marker({
                         position: brewcoords,
                         map: map,
@@ -121,3 +117,4 @@ $('#addLocation').on('click', function(event) {
         });
     }
 });
+

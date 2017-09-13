@@ -3,27 +3,6 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
- .iw_content {
-   font-family: 'Open Sans Condensed', sans-serif;
-   font-size: 15px;
-   font-weight: 400;
-   padding: 10px;
-   background-color: #48b5e9 ;
-   color: white;
-   margin: 1px;
-   border-radius: 2px 2px 0 0;
-}
-
-.iw_title {
-   font-family: 'Open Sans Condensed', sans-serif;
-   font-size: 22px;
-   font-weight: 200;
-   padding: 10px;
-   background-color: #48b5e9 ;
-   color: white;
-   margin: 1px;
-   border-radius: 2px 2px 0 0;
-}
 
 #buttonSubmit{
   align-items: center;
@@ -93,7 +72,7 @@ p {
   }
 }
 a {
-  color: red;
+  color: #42DCA3;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -101,7 +80,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: red;
+  color: #1d9b6c;
 }
 .light {
   font-weight: 400;
@@ -312,16 +291,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid red;
-  color: red;
+  border: 1px solid #42DCA3;
+  color: #42DCA3;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid red;
+  border: 1px solid #42DCA3;
   outline: none;
   color: black;
-  background-color: red;
+  background-color: #42DCA3;
 }
 ul.banner-social-buttons {
   margin-top: 0;
